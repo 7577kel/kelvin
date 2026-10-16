@@ -1,38 +1,49 @@
-body {
-  font: 1.2em / 1.5 sans-serif;
-}
-
+/* Reset & Fondasi */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.cart {
-  height: fit-content;
-  width: fit-content;
-  padding: 0.5em;
-  border: 5px solid #cccccc;
-  overflow: auto;
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f7;
+  color: #333333;
+  padding: 2rem;
   display: flex;
-
+  justify-content: center;
 }
 
-.profile {
-  color: rgb(0, 0, 0);
-  background-color: #ffffff;
-  padding: 1em;
-  float: left;
-  width: 50%;
-  height: fit-content;
-}
-
-.konten {
-  padding: 1em;
-  margin-left: 160px;
-  text-align: justify;
-}
-
-img {
+/* Kartu Utama */
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 600px;
   width: 100%;
-  height: fit-content;
-  border-radius: 100%;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Bagian Foto Profil */
+.profile {
+  flex-shrink: 0;
+  width: 120px;
+}
+
+.profile img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Bagian Konten Teks */
+.konten {
+  flex: 1;
+  text-align: justify;
 }
