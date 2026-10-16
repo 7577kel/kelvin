@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  font: inherit;
+  resize: vertical;
+}
+
+#sisa {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+#peringatan {
+  color: red;
+}
